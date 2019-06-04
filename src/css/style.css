@@ -1,0 +1,151 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: transparent;
+}
+html {
+    height: 100%;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 999;
+}
+.modal__wrapper {
+    width: 400px;
+    padding: 25px 15px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    background-color: #fff;
+}
+.modal__button-wrapper {
+    width: 100%;
+    text-align: right;
+}
+.modal__button {
+    padding: 10px 20px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.modal__button:last-child {
+    margin-right: 0;
+}
+.modal__label {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.modal__form-title {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.modal__input-title {
+    margin-bottom: 5px;
+}
+.modal__input {
+    width: 100%;
+    padding: 5px 10px;
+    border: 1px solid #000000;
+    font-size: 18px;
+}
+.modal__textarea {
+    width: 100%;
+    padding: 5px;
+    min-height: 80px;
+    max-height: 120px;
+    resize: vertical;
+}
+.modal__error--red {
+    border-color: red;
+}
+
+.help-desk {
+    width: 550px;
+}
+.help-desk__head {
+    text-align: right;
+    margin-bottom: 20px;
+}
+.help-desk__button {
+    padding: 10px 30px;
+    font-size: 18px;
+    background-color: transparent;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.help-desk__list {
+    border: 1px solid #333333;
+}
+.help-desk__item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    list-style: none;
+    border-bottom: 1px solid #000000;
+}
+.help-desk__list--hidden {
+    display: none;
+}
+.help-desk__item:last-child {
+    border-bottom: 0;
+}
+.help-desk__item-check {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #000000;
+    margin: 0 20px;
+    cursor: pointer;
+}
+.help-desk__item-check--checked {
+    color: green;
+    font-size: 18px;
+}
+.help-desk__item-content {
+    flex-grow: 1;
+}
+.help-desk__item-name {
+    padding: 20px 0;
+    cursor: pointer;
+}
+.help-desk__item-description {
+    display: none;
+    margin-bottom: 20px;
+}
+.help-desk__item-description--show {
+    display: block;
+}
+.help-desk__item-date {
+    margin: 0 20px;
+}
+.help-desk__item-buttons {
+    margin: 0 20px;
+}
+.help-desk__item-button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.help-desk__item-button:last-child {
+    margin-right: 0;
+}
